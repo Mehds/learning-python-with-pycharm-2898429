@@ -31,8 +31,12 @@ class Cell(Rect):
     def set_inactive(self):
         self.active = False
 
+    # based on the number of living_neighbors and the current state of the cell
+    # decide what it's future_state should be.
     def set_future_state(self, living_neighbors: int):
         pass
 
+    # set the current state to the future state
+    # then set the future_state to None, we don't need to keep that information around
     def update(self):
         pass

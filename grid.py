@@ -41,6 +41,7 @@ class Grid:
             for col_index, cell in enumerate(row):
                 cell.set_future_state(self.__count_living_neighbors(col_index, row_index))
 
+    # To-do: Call compute_future_states, then go through all cells and update them
     def update(self):
         pass
 
